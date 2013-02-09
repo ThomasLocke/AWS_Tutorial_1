@@ -1,0 +1,11 @@
+# Do not track build objects, except .gitignore
+build*/*
+!build*/.gitignore
+
+# Do not track stuff in exe, except .gitignore
+exe/*
+!exe/.gitignore
+
+# Do not track emacs temporary and backup files
+\#*#
+*~
