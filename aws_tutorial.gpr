@@ -1,3 +1,5 @@
+with "aws";
+
 project AWS_Tutorial is
    type Build_Type is ("Debug", "Production");
    Build : Build_Type := External ("BUILDTYPE", "Production");
