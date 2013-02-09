@@ -1,8 +1,6 @@
-A short tutorial on how to use the Ada Web Server (AWS) library to add HTTP
-functionality to your program.
-
-In this first tutorial we will learn how to setup dispatchers to handle content,
-and 404's.
+A short example program showing how to use the Ada Web Server (AWS) library to
+add HTTP functionality to your program, specifically showing how to setup
+dispatchers to handle content and 404's.
 
 To try the program simply run make, navigate to exe/ and start the aws_tutorial
 executable:
