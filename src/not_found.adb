@@ -1,7 +1,14 @@
 with AWS.Messages;
 with AWS.MIME;
+with AWS.Response;
+with AWS.Status;
 
 package body Not_Found is
+
+   function Generate_Content
+     (Request : in AWS.Status.Data)
+      return AWS.Response.Data;
+   --  Generate the 404 response.
 
    ----------------
    --  Callback  --

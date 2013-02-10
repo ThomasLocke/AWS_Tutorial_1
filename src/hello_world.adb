@@ -1,7 +1,14 @@
 with AWS.Messages;
 with AWS.MIME;
+with AWS.Response;
+with AWS.Status;
 
 package body Hello_World is
+
+   function Generate_Content
+     (Request : in AWS.Status.Data)
+      return AWS.Response.Data;
+   --  Generate the Hello World! response.
 
    ----------------
    --  Callback  --
