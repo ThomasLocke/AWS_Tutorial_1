@@ -27,7 +27,7 @@ package body Hello_World is
 
    function Generate_Content
      (Request : in AWS.Status.Data)
-     return AWS.Response.Data
+      return AWS.Response.Data
    is
       Browser : constant String := AWS.Status.User_Agent (Request);
    begin

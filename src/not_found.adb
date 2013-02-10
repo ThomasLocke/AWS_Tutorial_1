@@ -27,7 +27,7 @@ package body Not_Found is
 
    function Generate_Content
      (Request : in AWS.Status.Data)
-     return AWS.Response.Data
+      return AWS.Response.Data
    is
       Resource : constant String := AWS.Status.URI (Request);
    begin
