@@ -14,6 +14,8 @@ begin
       & Positive'Image (AWS.Default.Server_Port)
       & ". Press q to kill me.");
 
+   Ada.Text_IO.Put_Line ("http://localhost:8080/helloworld");
+
    AWS.Server.Start (Web_Server => Web_Server,
                      Dispatcher => Handlers.Get_Dispatcher,
                      Config => AWS.Config.Get_Current);
